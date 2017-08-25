@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.newdream</groupId>
+  <artifactId>dorado-imageview</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>基于dorado的图片预览插件</description>
+  <packaging>jar</packaging>
+  
+  <dependencies>
+  	<dependency>
+		<artifactId>dorado-core</artifactId>
+		<groupId>com.bstek.dorado</groupId>
+		<version>7.5.0-SNAPSHOT</version>
+		<scope>compile</scope>
+	</dependency>
+  </dependencies>
+  
+  	<build>
+	  <plugins>
+	 	<plugin>
+	 		<groupId>org.apache.maven.plugins</groupId>
+	 		<artifactId>maven-compiler-plugin</artifactId>
+	 		<configuration>
+	 			<source>1.7</source>
+				<target>1.7</target>
+				<encoding>${project.build.sourceEncoding}</encoding>
+			</configuration>
+	 	</plugin> 
+	  </plugins>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.*</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+			<resource>
+			<directory>src/main/resources</directory>
+			<includes>
+			<include>**/*.*</include>
+			</includes>
+			</resource>
+		</resources>
+	</build>
+	<repositories>
+		<repository>
+		<id>bsdn-maven-repository</id>
+		<url>http://nexus.bsdn.org/content/groups/public/</url>
+		</repository>
+	</repositories>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<Packages>
+		<Package name="imageViewer" pattern="dorado-js" depends="base-widget,imageViewer-skin">
+			scripts/viewer/viewer,
+			scripts/dorado/imageViewer
+		</Package>
+		<Package name="imageViewer-skin" pattern="dorado-css">
+			skins/~current/viewer
+		</Package>
+	</Packages>
+</config>
