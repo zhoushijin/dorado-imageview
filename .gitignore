@@ -79,3 +79,6 @@ dorado-imageview.iml
 .idea/inspectionProfiles/
 .idea/workspace.xml
 src/test/
+.classpath
+.project
+target/
